@@ -1,0 +1,14 @@
+/* css selector
+element (tag name)
+id
+class
+(adv., psuedo)
+*/
+
+body {
+  background-color: mintCream;
+}
+
+#gameArea {
+  margin: 100px;
+}
