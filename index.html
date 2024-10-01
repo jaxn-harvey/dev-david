@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>jackson-dev-david</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Vroom!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://validator.nu/?doc=https%3A%2F%2Fjaxn-harvey.github.io%2Fdev-david%2F"
+            target="_blank">Nu Checker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jaxn-harvey/dev-david"
+            target="_blank">Repo</a>
+          </li>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+        </ul>
+        <form id="myForm" class="d-flex">
+          <button id="btnToggle" class="btn btn-outline-primary" type="submit">Reset game</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+<!-- partial:index.partial.html -->
+<div id="gameArea">
+<label for="bakerName">Your Name</label>
+<input id="bakerName" type="text">
+<button id="btnGetAvatar" class="btn btn-outline-primary btn-med">Get your player avatar</button>
+<div id="greetingArea"></div>
+<div id="animalArea"></div>
+
+<p>Drag the racecar across the finish line to win!</p>
+
+<div class="raceParent">
+<div id="imgDrag" class="raceCar">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1a5SZZRj0cKt8fIJ03BPgze81K1RipYNWw&s" alt="race car"
+  id="carposition" height="200px"> 
+</div>
+<div id="racetrack" class="raceLine">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCLrob1_LWAzQjIkt0Whnt7q3yDkt4hkEXQ&s" alt="finish line"
+  height="350px">
+</div>
+</div>
+
+</div>
+
+<footer className="contrast-footer footer-dark footer-shadow-dark p-5">
+  <div className="container d-flex flex-column">
+    <div className="row">
+      <div className="col-md-4">
+        <p>
+          <div className=" d-flex ">
+            <h2
+              style='font-weight: bold'
+              className="d-inline font-weight-bold text-uppercase me-1"
+            >
+              Vroom Vroom Inc.
+            </h2>
+            Fun and complex games
+          </div>
+          <br>
+          <a href="https://una.edu/" className="text-success font-bold mb-2" target="_blank">
+            Click to see the carnival master's school
+          </a>
+          <div className="d-flex flex-column">
+            <span className="d-flex align-items-center my-1">
+              <span
+                className=" me-2 bg-success"
+                style="border-radius: 10px; width:10px; height:10px"
+              >
+              <span>*Games may be rigged*</span>
+            </span>
+            <span className="d-flex align-items-center">
+              <span
+                className=" me-2 bg-success"
+                style="border-radius: 10px; width:10px; height:10px"
+              >
+              <span>*Not liable for injuries*</span>
+            </span>
+          </div>
+          <br>
+          Florence
+        </p>
+      
+    <small className="text-center mt-5 footer-copyright">
+      &copy; Jackson, 2024. All rights reserved
+    </small>
+    </div>
+    </div>
+  </div>
+</footer>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script  src="scripts/script.js"></script>
+
+</body>
+</html>
