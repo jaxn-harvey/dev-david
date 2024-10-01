@@ -1,0 +1,28 @@
+.raceParent {
+  text-align:center;
+}
+
+.raceCar {
+display: inline-block;
+align-content: left;
+}
+
+.raceLine {
+  display: inline-block;
+  align-content: right;
+  }
+  
+
+body {
+  background-color: mintCream;
+}
+
+#gameArea {
+  padding: 100px;
+  margin-bottom: 50px;
+  background-color: antiquewhite;
+}
+
+#animalArea {
+  padding-bottom: 50px;
+}
